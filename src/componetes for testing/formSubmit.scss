@@ -1,0 +1,107 @@
+@import '../App.scss';
+
+.formContainer {
+  background-color: #fbfdf1;
+  padding: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 20px;
+  @include mobile {
+    padding: 30px;
+  }
+  .form {
+    display: grid;
+    grid-template-columns: 290px 290px;
+    gap: 30px;
+    @include mobile {
+      grid-template-columns: 150px 150px;
+    }
+    .grid {
+      grid-column: 1 / span 2;
+      background-color: #008080;
+      border: none;
+      color: white;
+      height: 30px;
+      border-radius: 20px;
+    }
+    .input__text {
+      background-color: #008080;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      border-style: none;
+      label{
+        color: white;
+      }
+      input {
+        background-color:white;
+        border: none;
+        padding: 10px;
+        padding-left: 10px;width: 170px;
+        @include mobile {
+          width: 60px;
+        }
+      }
+    }
+    .input__number {
+      background-color: #008080;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      border-radius: 10px;
+      border-style: none;
+      label{
+        color: white;
+      }
+      @include mobile {
+        gap : 10px;
+      }
+      input {
+        background-color: white;
+        border: none;
+        padding: 10px;
+        padding-left: 10px;width: 170px;
+        @include mobile {
+          width: 60px;
+        }
+      }
+    }
+    .input__date {
+      background-color: #008080;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      border-style: none;
+      label{
+        color: white;
+      }
+      input {
+        background-color: white;
+        border: none;
+        padding: 10px;
+        padding-left: 10px;
+        width: 170px;
+        @include mobile {
+          width: 60px;
+        }
+      }
+    }
+    button{
+      background-color: #008080;
+      color: white;
+      border-radius: 10px;
+      border-style: none;
+    }
+  }
+} 
